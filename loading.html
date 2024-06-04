@@ -1,0 +1,19 @@
+<body>
+    <link rel="stylesheet" href="loading.css">
+<div style=" text-align: center;  padding: 300px; font-family: lato; ">
+    Please wait for processing ......<br>
+    <div class="loader"></div>
+</div>
+
+
+<form name="f1" action="Payment.html" method="post">
+<input type="hidden" name="id_crad" value="...">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="amount" value="12.99">
+</form>
+
+
+<script type="text/javascript">
+setTimeout(function(){f1.submit();}, 5000);
+</script>
+</body>
